@@ -49,7 +49,7 @@
 			<header>
 				<section class="images-top">
 					<div
-						class="bg-header-images-top py-4 d-flex align-items-center justify-content-center gap-5"
+						class="bg-header-images-top pt-5 d-flex align-items-center justify-content-center gap-5"
 					>
 						<img v-for="image in headerObj.images[0]" :src="image" />
 					</div>
@@ -68,12 +68,12 @@
 			<main>
 				<section class="jumbotron slider">
 					<div class="sliders-container">
-						<img src="./img/assets/slider2.jpg" class="active" alt="" />
+						<img :src="carouselObj.images[carouselObj.activeImage]" alt="" />
 						<div class="navigator">
-							<div class="prev-arrow">
+							<div class="prev-arrow" @click="prevImage()">
 								<img src="/img/assets/arrow-left.svg" alt="">
 							</div>
-							<div class="next-arrow">
+							<div class="next-arrow" @click="nextImage()">
 								<img src="/img/assets/arrow-right.svg" alt="">
 							</div>
 						</div>

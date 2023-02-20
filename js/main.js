@@ -26,15 +26,34 @@ createApp({
 					},
 				],
 			},
-			carouselImages: [
-				"img/assets/slider1.jpg",
-				"img/assets/slider2.jpg",
-				"img/assets/slider3.jpg",
-				"img/assets/slider4.jpg",
-			],
+			carouselObj: {
+				images: [
+					"./img/assets/slider1.jpg",
+					"./img/assets/slider2.jpg",
+					"./img/assets/slider3.jpg",
+					"./img/assets/slider4.jpg",
+				],
+				activeImage: 0,
+			},
 		};
 	},
 	created() {
-		console.log(this.headerObj);
+		// console.log(this.headerObj);
+	},
+	methods: {
+		prevImage() {
+			if (this.carouselObj.activeImage - 1 < 0) {
+				this.carouselObj.activeImage = this.carouselObj.images.length - 1;
+			} else {
+				this.carouselObj.activeImage--;
+			}
+		},
+		nextImage() {
+			if (this.carouselObj.activeImage >= this.carouselObj.images.length - 1) {
+				this.carouselObj.activeImage = 0;
+			} else {
+				this.carouselObj.activeImage++;
+			}
+		},
 	},
 }).mount("#app");
