@@ -11,10 +11,10 @@ header {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 .bg-header-images-top > img {
-	height: 70px;
+	height: 30px;
 }
 .bg-header-images-top > img:nth-child(3) {
-	height: 200px;
+	height: 100px;
 }
 .navbar {
 	background-color: rgba(0, 0, 0, 0.7);
@@ -22,6 +22,10 @@ header {
 .navbar-list > li > a {
 	color: #ffffff;
 	text-decoration: none;
+}
+.navbar-list > li > a:hover {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ffffff;
 }
 .jumbotron > .sliders-container > img {
 	width: 100%;
@@ -37,7 +41,7 @@ header {
 }
 .navigator .prev-arrow {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 2%;
 }
 .navigator .prev-arrow,
@@ -48,14 +52,38 @@ header {
 	cursor: pointer;
 	user-select: none;
 }
+.navigator .prev-arrow:hover,
+.navigator .next-arrow:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
 
 .navigator .next-arrow {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	right: 2%;
 }
-
 .prev-arrow > img,
 .next-arrow > img {
-	height: 50px;
+	height: 30px;
+}
+/* Testo al centro */
+.slider-text {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	color: #ffffff;
+}
+.slider-text > h1 {
+	font-size: 5.2rem;
+	font-weight: bold;
+}
+.button-jumbo > a {
+	text-decoration: none;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	font-size: 30px;
 }

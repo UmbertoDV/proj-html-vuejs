@@ -51,21 +51,21 @@
 				<!-- SEZIONE HEADER DOVE CI SONO LE IMMAGINI -->
 				<section class="images-top">
 					<div
-						class="bg-header-images-top pt-5 d-flex align-items-center justify-content-center gap-5"
+						class="bg-header-images-top py-2 d-flex align-items-center justify-content-center gap-5"
 					>
 						<img v-for="image in headerObj.images[0]" :src="image" />
 					</div>
 				</section>
 				<!-- SEZIONE HEADER DOVE C'E LA  NAVBAR -->
 				<section
-					class="navbar d-flex align-items-center justify-content-center py-5"
+					class="navbar d-flex align-items-center justify-content-center py-3"
 				>
 				<!-- NAV BAR -->
 					<nav>
-						<ul class="navbar-list list-unstyled d-flex gap-5 fs-1 fw-semibold">
+						<ul class="navbar-list list-unstyled d-flex gap-5 fs-5 fw-bold">
 							<!-- CICLO PER PRENDERE TESTO DALL'OGGETTO -->
 							<li v-for="text in headerObj.text[0]">
-								<a href="">{{text}}</a>
+								<a href="#">{{text}}</a>
 							</li>
 					</nav>
 				</section>
@@ -86,6 +86,14 @@
 							<!-- FUNZIONE PER AVANZARE IMMAGINE -->
 							<div class="next-arrow" @click="nextImage()">
 								<img src="/img/assets/arrow-right.svg" alt="">
+							</div>
+						</div>
+						<div class="slider-text d-flex flex-column align-items-center">
+							<h1>Football Club</h1>
+							<h1 class="pb-3">Sport Club</h1>
+							<span>Private football matches</span>
+							<div class="button-jumbo p-5">
+								<a class="p-4 rounded-5" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
