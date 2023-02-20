@@ -26,6 +26,12 @@ createApp({
 					},
 				],
 			},
+			carouselImages: [
+				"img/assets/slider1.jpg",
+				"img/assets/slider2.jpg",
+				"img/assets/slider3.jpg",
+				"img/assets/slider4.jpg",
+			],
 		};
 	},
 	created() {
