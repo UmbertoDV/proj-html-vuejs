@@ -1,0 +1,16 @@
+.bg-header-images-top {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.bg-header-images-top > img {
+	height: 100px;
+}
+.bg-header-images-top > img:nth-child(3) {
+	height: 300px;
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-list > li > a {
+	color: #ffffff;
+	text-decoration: none;
+}
