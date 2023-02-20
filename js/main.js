@@ -37,9 +37,6 @@ createApp({
 			},
 		};
 	},
-	created() {
-		// console.log(this.headerObj);
-	},
 	methods: {
 		prevImage() {
 			if (this.carouselObj.activeImage - 1 < 0) {
@@ -55,5 +52,8 @@ createApp({
 				this.carouselObj.activeImage++;
 			}
 		},
+	},
+	mounted() {
+		setInterval(this.nextImage, 3000);
 	},
 }).mount("#app");

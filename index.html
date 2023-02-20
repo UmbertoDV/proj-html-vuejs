@@ -46,7 +46,9 @@
 
 	<body>
 		<div id="app">
+			<!-- HEADER -->
 			<header>
+				<!-- SEZIONE HEADER DOVE CI SONO LE IMMAGINI -->
 				<section class="images-top">
 					<div
 						class="bg-header-images-top pt-5 d-flex align-items-center justify-content-center gap-5"
@@ -54,31 +56,41 @@
 						<img v-for="image in headerObj.images[0]" :src="image" />
 					</div>
 				</section>
+				<!-- SEZIONE HEADER DOVE C'E LA  NAVBAR -->
 				<section
 					class="navbar d-flex align-items-center justify-content-center py-5"
 				>
+				<!-- NAV BAR -->
 					<nav>
 						<ul class="navbar-list list-unstyled d-flex gap-5 fs-1 fw-semibold">
+							<!-- CICLO PER PRENDERE TESTO DALL'OGGETTO -->
 							<li v-for="text in headerObj.text[0]">
 								<a href="">{{text}}</a>
 							</li>
 					</nav>
 				</section>
 			</header>
+			<!-- FINE HEADER -->
+			<!-- INIZIO MAIN -->
 			<main>
+				<!-- CREAZIONE PLACEHOLDER PER IL CAROSELLO -->
 				<section class="jumbotron slider">
 					<div class="sliders-container">
+						<!-- PRENDO LE IMMAGINI DELL'ARRAY -->
 						<img :src="carouselObj.images[carouselObj.activeImage]" alt="" />
 						<div class="navigator">
+							<!-- FUNZIONE PER ARRETRARE IMMAGINE -->
 							<div class="prev-arrow" @click="prevImage()">
 								<img src="/img/assets/arrow-left.svg" alt="">
 							</div>
+							<!-- FUNZIONE PER AVANZARE IMMAGINE -->
 							<div class="next-arrow" @click="nextImage()">
 								<img src="/img/assets/arrow-right.svg" alt="">
 							</div>
 						</div>
 					</div>
 				</section>
+				<!-- FINE CAROSELLO -->
 			</main>
 		</div>
 	</body>
