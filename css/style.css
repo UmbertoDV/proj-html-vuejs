@@ -5,6 +5,7 @@ header {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	z-index: 100;
 }
 .bg-header-images-top {
 	background-color: rgba(0, 0, 0, 0.7);
@@ -22,8 +23,7 @@ header {
 	color: #ffffff;
 	text-decoration: none;
 }
-
-.jumbotron > .sliders > img {
+.jumbotron > .sliders-container > img {
 	width: 100%;
 	height: 70vh;
 	object-fit: cover;
@@ -31,4 +31,30 @@ header {
 }
 .jumbotron .active {
 	display: inline;
+}
+.sliders-container {
+	position: relative;
+}
+.navigator .prev-arrow {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+}
+.navigator .prev-arrow,
+.navigator .next-arrow {
+	border: 4px solid #ffffff;
+	padding: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.navigator .next-arrow {
+	position: absolute;
+	top: 50%;
+	left: 96%;
+}
+
+.prev-arrow > img,
+.next-arrow > img {
+	height: 50px;
 }
