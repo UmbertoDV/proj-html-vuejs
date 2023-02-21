@@ -160,3 +160,22 @@ header {
 .players-section .button:hover {
 	padding: 60px 0 100px 0;
 }
+/* score-tables */
+.league-table,
+.fixtures {
+	width: 700px;
+	background-color: #f3f3f3;
+	border: 1px solid #ebebeb;
+}
+.score-tables img {
+	width: 55px;
+}
+thead th,
+tbody td {
+	text-align: center;
+	padding: 5px 5px;
+}
+.score-tables thead {
+	background-color: #000000;
+	color: #ffffff;
+}
