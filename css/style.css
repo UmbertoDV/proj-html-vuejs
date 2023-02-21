@@ -29,7 +29,7 @@ header {
 }
 .jumbotron > .sliders-container > img {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	object-fit: cover;
 	object-position: bottom;
 }
@@ -89,4 +89,74 @@ header {
 }
 .button-jumbo > a:hover {
 	background-color: rgba(0, 0, 0, 0.7);
+}
+/* instanbul-vs-united */
+.instanbul-vs-united .vs-text {
+	font-size: 4.3rem;
+}
+.instanbul-vs-united .button-match-details > a {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 20px 40px;
+}
+/* upcoming-matchs */
+.upcoming-matchs {
+	background-image: url("../img/assets/saha.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+.upcoming-matchs .vs-text {
+	font-size: 4.3rem;
+}
+.upcoming-matchs .images-vs {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 60%;
+	margin: 0 auto;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.upcoming-matchs .date-vs {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 60%;
+	margin: 0 auto;
+}
+/* players-section */
+.players-section {
+	background-image: url("../img/assets/player.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+.players-section .player-desc {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #000000;
+	width: 100%;
+}
+.container-personal {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.players-section .card-pers {
+	position: relative;
+}
+.players-section .button > a {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 30px 40px;
+	border: 2px solid #ffffff;
+}
+.players-section .button > a:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.players-section .button {
+	padding: 60px 0 100px 0;
+}
+.players-section .button:hover {
+	padding: 60px 0 100px 0;
 }
