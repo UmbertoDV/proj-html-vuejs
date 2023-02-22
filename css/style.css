@@ -179,3 +179,22 @@ tbody td {
 	background-color: #000000;
 	color: #ffffff;
 }
+.view-full-table {
+	color: #ffffff;
+}
+.score-tables .card-squad-bg-dark {
+	background-color: #ebebeb;
+}
+.score-tables .card-squad-bg-light {
+	background-color: #f3f3f3;
+}
+.score-table .league-table {
+	position: relative;
+}
+.score-table .view-full-table {
+	position: absolute;
+}
+/* adv-imgs */
+.adv-imgs img {
+	border: 2px solid #ffffff;
+}
