@@ -194,15 +194,37 @@ tbody td {
 .score-table .view-full-table {
 	position: absolute;
 }
+.score-tables .title {
+	background-color: white;
+	border: 1px solid white;
+}
 /* adv-imgs */
 .adv-imgs img {
 	border: 2px solid #ffffff;
 }
 /* articles */
 .articles {
-	height: 200px;
 	width: 100%;
 	background-color: #ffffff;
+}
+.articles .articles-header img {
+	width: 8rem;
+}
+.articles .cards-section img {
+	width: 13rem;
+	border-radius: 10px;
+}
+.articles .cards-section .card-personal {
+	width: 20%;
+	border-radius: 20px;
+	box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.articles .cards-section .card-personal a {
+	padding: 20px 60px;
+	border-radius: 25px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
 }
 /* footer */
 footer {
