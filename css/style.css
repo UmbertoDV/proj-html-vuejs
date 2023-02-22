@@ -198,3 +198,46 @@ tbody td {
 .adv-imgs img {
 	border: 2px solid #ffffff;
 }
+/* articles */
+.articles {
+	height: 200px;
+	width: 100%;
+	background-color: #ffffff;
+}
+/* footer */
+footer {
+	color: #ffffff;
+}
+footer img {
+	width: 50px;
+}
+.footer .social-icons > i {
+	padding: 10px 20px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.footer input[type="email"] {
+	padding: 25px 100px 25px 15px;
+	border-radius: 30px;
+	border-style: none;
+}
+.footer .newsletter a {
+	padding: 25px;
+	border-radius: 30px;
+	border-style: none;
+	text-decoration: none;
+	color: #000000;
+	background-color: #ffffff;
+	text-align: center;
+}
+.footer ul {
+	list-style-type: none;
+}
+.footer ul a {
+	text-decoration: none;
+	color: white;
+}
+.footer ul a:hover {
+	border-bottom: 1px solid #ffffff;
+}

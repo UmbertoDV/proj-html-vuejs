@@ -407,7 +407,66 @@
 						</div>
 					</div>
 				</section>
+				<section class="articles"></section>
 			</main>
+			<footer>
+				<section class="footer bg-black">
+					<div class="container-personal py-4">
+						<div class="row flex-nowrap">
+							<div class="col-4 d-flex flex-column gap-3 w-25">
+								<img src="./img/assets/logo-footer-football.png" alt="">
+								<div class="location">
+									<span><i class="fa-solid fa-location-dot"></i> New Jersey, USA</span>
+								</div>
+								<div class="tel-number">
+									<span><i class="fa-solid fa-phone-volume"></i> +1 (234) 567 89 10</span>
+								</div>
+								<div class="mail">
+									<span><i class="fa-solid fa-envelope"></i> example@example.com</span>
+								</div>
+								<div class="social-icons">
+									<i class="fa-brands fa-facebook-f"></i>
+									<i class="fa-brands fa-instagram mx-4"></i>
+									<i class="fa-brands fa-twitter"></i>
+								</div>
+							</div>
+							<div class="col-4 d-flex flex-column gap-1 newsletter w-25">
+								<h3 class="fw-bolder">Join Our Newsletter</h3>
+								<p>Subscribe to be informed about important developments in our club and football world.</p>
+								<input type="email" name="" id="" placeholder="Your Email Addres">
+								<a href="#">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
+							</div>
+							<div class="col-4 ms-auto">
+								<div class="row">
+									<div class="col-6">
+										<h3 class="fw-bolder">Education</h3>
+										<nav>
+											<ul class="p-0">
+												<li v-for="text in headerObj.text[0]">
+													<a href="#">{{text}}</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+									<div class="col-6">
+										<h3 class="fw-bolder">Quick Links</h3>
+										<nav>
+											<ul class="p-0">
+												<li v-for="text in headerObj.text[0]">
+													<a href="#">{{text}}</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="credits bg-black py-5 text-center">
+					<i class="fa-regular fa-copyright"></i> <span>2022 Football Club - All Rights Reserved.</span>
+				</section>
+			</footer>
 		</div>
 	</body>
 </html>
